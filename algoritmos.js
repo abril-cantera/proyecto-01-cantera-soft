@@ -61,3 +61,28 @@ alert(`Operacion finalizada`);
  console.log (`el resultado es ${resultado}`)
 
  //-----------------------------------------------------------
+
+//Ejercicio Division
+
+ var dividendo= 25;
+ var divisor= 5;
+ function divicion(num1,num2) {
+    return num1 / num2;
+ }
+ if (dividendo==divisor) {
+    resultado=1;
+ }
+ else if (divisor==0) {
+    resultado="Error";
+ }
+ else {
+    resultado=divicion(dividendo,divisor);
+ }
+ if (resultado=="Error") {
+    console.log ("El divisor debe ser mayor a 0");
+ }
+ else {
+    console.log (`El valor de la division es ${resultado}`)
+ }
+
+//-----------------------------------------------------------
