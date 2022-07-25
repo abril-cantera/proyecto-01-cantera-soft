@@ -86,3 +86,29 @@ alert(`Operacion finalizada`);
  }
 
 //-----------------------------------------------------------
+
+
+//Ejercicio de sacar Promedio
+
+var nombre;
+var matematica, lengua, quimica, promedio;
+
+nombre = prompt("Cual es tu nombre? ");
+
+matematica = parseInt(prompt(`hola ${nombre} Cual es tu nota de matematica?`));
+
+lengua = parseInt(prompt("Cual es tu nota de lengua? "));
+
+quimica = parseInt(prompt("Cual es tu nota de quimica? "));
+
+function promediar(lengua, matematica, quimica) {
+  return (matematica + lengua + quimica) / 3;
+}
+
+promedio = promediar(lengua, matematica, quimica);
+
+if (promedio >= 6) {
+  console.log(`FELICIDADES ${nombre} tu promedio es: ${promedio}`);
+} else {
+  console.log(`Tu promedio es ${promedio}`);
+}
